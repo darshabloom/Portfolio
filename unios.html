@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniOS — Darsha Waterhouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .detail-shell {
+      width:min(1100px, calc(100% - 28px));
+      margin:0 auto;
+      padding-bottom:70px;
+    }
+    .detail-nav {
+      min-height:72px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-bottom:1px solid var(--line);
+    }
+    .detail-nav a {
+      text-decoration:none;
+      font-weight:600;
+    }
+    .detail-hero {
+      padding:72px 0 52px;
+    }
+    .detail-hero h1 {
+      margin:10px 0 18px;
+      font-size:clamp(3.2rem, 7vw, 6.8rem);
+      line-height:.95;
+      letter-spacing:-.06em;
+    }
+    .detail-hero .summary {
+      max-width:720px;
+      font-size:1.18rem;
+      line-height:1.65;
+      color:#454a44;
+    }
+    .detail-grid {
+      display:grid;
+      gap:12px;
+    }
+    .detail-section {
+      display:grid;
+      grid-template-columns:.28fr .72fr;
+      gap:30px;
+      padding:26px;
+      border-radius:18px;
+      background:rgba(255,255,255,.64);
+      backdrop-filter:blur(10px);
+      border:1px solid rgba(255,255,255,.74);
+    }
+    .detail-section h2 {
+      margin:0;
+      font-size:1rem;
+    }
+    .detail-section p {
+      margin:0;
+      line-height:1.7;
+      color:#454a44;
+    }
+    .detail-actions {
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:20px;
+    }
+    .detail-actions a {
+      padding:10px 14px;
+      border-radius:999px;
+      border:1px solid rgba(20,23,20,.22);
+      background:rgba(255,255,255,.66);
+      text-decoration:none;
+    }
+    @media(max-width:680px) {
+      .detail-section {
+        grid-template-columns:1fr;
+        gap:8px;
+      }
+      .detail-hero {
+        padding-top:48px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <canvas id="networkCanvas" aria-hidden="true"></canvas>
+
+  <main class="detail-shell">
+    <header class="detail-nav">
+      <a href="index.html">← Portfolio</a>
+      <span class="mini-label">Darsha Waterhouse</span>
+    </header>
+
+    <section class="detail-hero">
+      <p class="mini-label">Software · in progress</p>
+      <h1>UniOS</h1>
+      <p class="summary">An evolving project I’m still shaping, testing and figuring out.</p>
+    </section>
+
+    <section class="detail-grid">
+      <article class="detail-section"><h2>Current state</h2><p>The project is still under development, so I’m presenting what exists now rather than pretending it is finished.</p></article>
+<article class="detail-section"><h2>Why show unfinished work?</h2><p>The experiments, decisions and changes before something is complete are part of how I work.</p></article>
+<article class="detail-section"><h2>Next</h2><p>Continue implementing the core experience, then replace this progress page with a fuller case study.</p></article>
+    </section>
+
+    <div class="detail-actions">
+      <a href="#" data-placeholder-link>GitHub ↗</a>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+  <script>
+    accent = "orange";
+  </script>
+</body>
+</html>

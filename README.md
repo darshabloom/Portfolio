@@ -1,50 +1,71 @@
 # Darsha Waterhouse — Portfolio
 
-Personal portfolio showcasing selected software, web, UI/UX and computer science projects.
+Live site: https://darshabloom.github.io/Portfolio/
 
-## About
+Personal portfolio focused on UI/UX, frontend, full-stack development, software, algorithms and product work.
 
-I'm a Computer Science + AI student at AUT with interests across frontend development, full stack development, UI/UX, software engineering, algorithms and product design.
+## Design direction
 
-I also tutor maths, which has shaped how I think about clarity, accessibility and explaining complex ideas simply.
+This version keeps the **v3 project layout** because that layout best balances different project sizes:
 
-This portfolio brings together projects I've built, shipped, experimented with and am still developing.
+- Studdy: 7 columns
+- Currency Exchange: 5 columns
+- Snowwoman: 5 columns
+- Matryoshka: 7 columns
+- UniOS: full width
 
-## Featured Projects
+The project layout is intentionally asymmetric without overlapping cards.
 
-### Studdy
-A tutoring platform designed around the real workflows of tutors, parents and students.
+## Interactive background
 
-### Matryoshka
-A web project that was built and used in a real world setting.
+The background uses a custom HTML Canvas network:
 
-### Currency Exchange
-A Java graph algorithm project using Bellman–Ford for conversion paths and arbitrage detection.
+- floating dots
+- automatic connections between nearby dots
+- the cursor becomes a network node
+- nearby dots connect directly to the cursor
+- nearby dots are visibly pushed away from the cursor
+- project hover changes the network colour palette
 
-### Snowwoman
-A 2D computer graphics project combining programming and visual design.
+This represents the idea of making connections across different interests and technical areas.
 
-### UniOS
-An ongoing software project currently in development.
+## Homepage
 
-## Built With
+The homepage includes:
+
+- short introduction
+- interests shown together in one readable group
+- name and professional links
+- selected projects
+- grouped tools and languages
+- what I'm looking for
+- what I bring
+
+## Project pages
+
+Each project links to its own page:
+
+- Studdy
+- Matryoshka
+- Currency Exchange
+- Snowwoman
+- UniOS
+
+## Built with
 
 - HTML
 - CSS
 - JavaScript
+- Canvas API for the interactive background
 
-The portfolio itself is intentionally lightweight and framework free.
+The portfolio itself remains framework-free.
 
-## Live Site
+## Before publishing
 
-[View portfolio](YOUR-GITHUB-PAGES-URL-HERE)
-
-## Status
-
-Actively being developed and refined.
-
-Current focus:
-- improving UI/UX and visual identity
-- adding interactive project demos
-- expanding project case studies
-- improving accessibility and responsive behaviour
+Replace:
+- placeholder CV link
+- placeholder GitHub / LinkedIn links
+- email address
+- project demo URLs
+- repository URLs
+- screenshot placeholders with real screenshots
