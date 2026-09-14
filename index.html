@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Darsha Waterhouse — software, web, UI/UX, algorithms and creative computing." />
+  <title>Darsha Waterhouse</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <main class="page">
+    <header class="topbar">
+      <a class="brand" href="#">Darsha Waterhouse</a>
+      <nav>
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#" data-placeholder-link>CV</a>
+        <a href="#" data-placeholder-link>GitHub</a>
+        <a href="#" data-placeholder-link>LinkedIn</a>
+      </nav>
+    </header>
+
+    <section class="intro" id="about">
+      <div class="intro-copy">
+        <p class="kicker">Auckland, New Zealand</p>
+        <h1>Hi, I’m Darsha.</h1>
+        <p class="lead">I’m interested in the space between <strong>design and development</strong> — UI/UX, frontend
+          work, software, and the small decisions that make a product easier to understand and nicer to use.</p>
+        <p class="about-text">I study Computer Science + AI at AUT, tutor maths, and like taking ideas from “this could
+          be useful” to something people can actually click, test and use. I’m happiest when I get to think about both
+          how something works and how it feels.</p>
+        <div class="interest-row">
+          <span>UI/UX</span><span>Frontend development</span><span>Full
+            Stack</span><span>Software</span><span>Algorithms</span><span>Maths</span><span>Product thinking</span>
+        </div>
+      </div>
+      <aside class="intro-card">
+        <div class="photo-placeholder">
+          <img src="DarshaProfilePhoto.png" alt="Darsha Waterhouse">
+        </div>
+        <div class="intro-card-bottom">
+          <div>
+            <p class="mini-label">Currently</p>
+            <p>Building Studdy</p>
+          </div>
+          <div>
+            <p class="mini-label">Study</p>
+            <p>Computer Science + AI @ AUT</p>
+          </div>
+          <div class="quick-links">
+            <a href="#" data-placeholder-link>CV ↓</a>
+            <a href="https://github.com/darshabloom" data-placeholder-link>GitHub ↗</a>
+            <a href="mailto:darshawaterhouse360@gmail.com">Email ↗</a>
+            <a href="www.linkedin.com/in/darsha-waterhouse-b93990320" data-placeholder-link>LinkedIn ↗</a>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="work-section" id="work">
+      <div class="section-heading">
+        <h2>Selected work</h2>
+        <p>A mix of products, code, experiments and work in progress.</p>
+      </div>
+      <div class="work-grid">
+        <article class="project project-large dark" data-project="studdy">
+          <div class="project-media carousel" data-carousel>
+            <div class="slides">
+              <div class="slide active placeholder green-soft">Studdy dashboard screenshot</div>
+              <div class="slide placeholder charcoal">Tutor profile screenshot</div>
+              <div class="slide placeholder offwhite">Booking flow screenshot</div>
+            </div><button class="carousel-btn prev">←</button><button class="carousel-btn next">→</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline">
+              <h3>Studdy</h3><span class="status">building</span>
+            </div>
+            <p>A tutoring platform shaped around real tutor, parent and student workflows.</p>
+            <div class="project-meta"><span>full-stack</span><span>education</span><span>product</span></div><button
+              class="project-link">Open project ↗</button>
+          </div>
+        </article>
+
+        <article class="project project-small light" data-project="currency">
+          <div class="project-media carousel" data-carousel>
+            <div class="slides">
+              <div class="slide active placeholder charcoal green-text">Currency graph</div>
+              <div class="slide placeholder green-soft">Arbitrage result</div>
+            </div><button class="carousel-btn prev">←</button><button class="carousel-btn next">→</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline">
+              <h3>Currency Exchange</h3><span class="status">Java</span>
+            </div>
+            <p>Graph algorithms for exchange paths and arbitrage detection.</p>
+            <div class="project-meta"><span>Bellman–Ford</span><span>graphs</span></div><button
+              class="project-link">Open project ↗</button>
+          </div>
+        </article>
+
+        <article class="project project-small green" data-project="snowwoman">
+          <div class="project-media carousel" data-carousel>
+            <div class="slides">
+              <div class="slide active placeholder ice">Snowwoman scene screenshot</div>
+              <div class="slide placeholder pale">Graphics detail screenshot</div>
+            </div><button class="carousel-btn prev">←</button><button class="carousel-btn next">→</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline">
+              <h3>Snowwoman</h3><span class="status">2D graphics</span>
+            </div>
+            <p>A visual programming project combining code, composition and creative graphics.</p>
+            <div class="project-meta"><span>computer graphics</span><span>creative coding</span></div><button
+              class="project-link">Open project ↗</button>
+          </div>
+        </article>
+
+        <article class="project project-medium warm" data-project="matryoshka">
+          <div class="project-media carousel" data-carousel>
+            <div class="slides">
+              <div class="slide active placeholder warmtone">Matryoshka homepage</div>
+              <div class="slide placeholder cream">Product page</div>
+              <div class="slide placeholder softblack">Ordering experience</div>
+            </div><button class="carousel-btn prev">←</button><button class="carousel-btn next">→</button>
+            <div class="carousel-dots"></div>
+          </div>
+          <div class="project-copy">
+            <div class="project-topline">
+              <h3>Matryoshka</h3><span class="status">shipped</span>
+            </div>
+            <p>A real web project that went beyond coursework and into live use.</p>
+            <div class="project-meta"><span>web</span><span>e-commerce</span><span>UI</span></div><button
+              class="project-link">Open project ↗</button>
+          </div>
+        </article>
+
+        <article class="project project-wide outline" data-project="unios">
+          <div class="project-copy split-copy">
+            <div>
+              <div class="project-topline">
+                <h3>UniOS</h3><span class="status">in progress</span>
+              </div>
+              <p>An evolving software project I’m still shaping and testing.</p>
+            </div>
+            <div class="wip-note">
+              <p class="mini-label">Why it’s here</p>
+              <p>I like showing work while it is still changing — decisions, experiments and unfinished edges included.
+              </p><button class="project-link">See current progress ↗</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="more-about">
+      <div>
+        <p class="mini-label">A little more about me</p>
+        <h2>I like making complicated things feel straightforward.</h2>
+      </div>
+      <p>That shows up in different ways: designing clearer interfaces, explaining maths to a student, debugging a flow
+        that technically works but feels awkward, or learning a new tool because the current one is getting in the way.
+        I’m interested in internships where I can keep doing that across software, frontend, web or QA work.</p>
+    </section>
+
+    <footer><span>Darsha Waterhouse</span><span>Auckland · 2026</span></footer>
+  </main>
+
+  <dialog class="project-dialog" id="projectDialog"><button class="dialog-close">×</button>
+    <div class="dialog-content"></div>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+
+</html>
