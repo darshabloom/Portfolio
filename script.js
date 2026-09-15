@@ -363,3 +363,32 @@ document.addEventListener("click", (event) => {
   event.preventDefault();
   alert("Replace this placeholder with your real link before publishing.");
 });
+
+const cvModal = document.getElementById("cvModal");
+const cvOpenButtons = document.querySelectorAll(".cv-open");
+const cvClose = document.querySelector(".cv-close");
+const cvBackdrop = document.querySelector(".cv-modal-backdrop");
+
+function openCV() {
+  cvModal.classList.add("open");
+  cvModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeCV() {
+  cvModal.classList.remove("open");
+  cvModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+cvOpenButtons.forEach((button) => {
+  button.addEventListener("click", openCV);
+});
+cvClose.addEventListener("click", closeCV);
+cvBackdrop.addEventListener("click", closeCV);
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape" && cvModal.classList.contains("open")) {
+    closeCV();
+  }
+});

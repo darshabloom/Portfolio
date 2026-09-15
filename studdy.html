@@ -1,92 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Studdy — Darsha Waterhouse</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
   <style>
     .detail-shell {
-      width:min(1100px, calc(100% - 28px));
-      margin:0 auto;
-      padding-bottom:70px;
+      width: min(1100px, calc(100% - 28px));
+      margin: 0 auto;
+      padding-bottom: 70px;
     }
+
     .detail-nav {
-      min-height:72px;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      border-bottom:1px solid var(--line);
+      min-height: 72px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--line);
     }
+
     .detail-nav a {
-      text-decoration:none;
-      font-weight:600;
+      text-decoration: none;
+      font-weight: 600;
     }
+
     .detail-hero {
-      padding:72px 0 52px;
+      padding: 72px 0 52px;
     }
+
     .detail-hero h1 {
-      margin:10px 0 18px;
-      font-size:clamp(3.2rem, 7vw, 6.8rem);
-      line-height:.95;
-      letter-spacing:-.06em;
+      margin: 10px 0 18px;
+      font-size: clamp(3.2rem, 7vw, 6.8rem);
+      line-height: .95;
+      letter-spacing: -.06em;
     }
+
     .detail-hero .summary {
-      max-width:720px;
-      font-size:1.18rem;
-      line-height:1.65;
-      color:#454a44;
+      max-width: 720px;
+      font-size: 1.18rem;
+      line-height: 1.65;
+      color: #454a44;
     }
+
     .detail-grid {
-      display:grid;
-      gap:12px;
+      display: grid;
+      gap: 12px;
     }
+
     .detail-section {
-      display:grid;
-      grid-template-columns:.28fr .72fr;
-      gap:30px;
-      padding:26px;
-      border-radius:18px;
-      background:rgba(255,255,255,.64);
-      backdrop-filter:blur(10px);
-      border:1px solid rgba(255,255,255,.74);
+      display: grid;
+      grid-template-columns: .28fr .72fr;
+      gap: 30px;
+      padding: 26px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, .64);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, .74);
     }
+
     .detail-section h2 {
-      margin:0;
-      font-size:1rem;
+      margin: 0;
+      font-size: 1rem;
     }
+
     .detail-section p {
-      margin:0;
-      line-height:1.7;
-      color:#454a44;
+      margin: 0;
+      line-height: 1.7;
+      color: #454a44;
     }
+
     .detail-actions {
-      display:flex;
-      flex-wrap:wrap;
-      gap:10px;
-      margin-top:20px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
     }
+
     .detail-actions a {
-      padding:10px 14px;
-      border-radius:999px;
-      border:1px solid rgba(20,23,20,.22);
-      background:rgba(255,255,255,.66);
-      text-decoration:none;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(20, 23, 20, .22);
+      background: rgba(255, 255, 255, .66);
+      text-decoration: none;
     }
+
     @media(max-width:680px) {
       .detail-section {
-        grid-template-columns:1fr;
-        gap:8px;
+        grid-template-columns: 1fr;
+        gap: 8px;
       }
+
       .detail-hero {
-        padding-top:48px;
+        padding-top: 48px;
       }
     }
   </style>
 </head>
+
 <body>
   <canvas id="networkCanvas" aria-hidden="true"></canvas>
 
@@ -103,15 +120,32 @@
     </section>
 
     <section class="detail-grid">
-      <article class="detail-section"><h2>The problem</h2><p>Tutoring often gets split across bookings, messages, homework, files, lesson notes and payments. I wanted the product to feel coherent rather than like a collection of unrelated tools.</p></article>
-<article class="detail-section"><h2>My role</h2><p>I’m working across product thinking, UI/UX, frontend and full-stack development. I’m designing flows, testing how they make sense from different user roles, and building the product itself.</p></article>
-<article class="detail-section"><h2>A UX example</h2><p>A rebooking flow initially forced parents back through tutor discovery. That technically worked, but made little sense for someone who already had a tutor. I redesigned the flow around repeat behaviour instead.</p></article>
-<article class="detail-section"><h2>Demo</h2><p>The current portfolio version uses sample data so recruiters can explore the experience without interacting with real users or personal information.</p></article>
+      <article class="detail-section">
+        <h2>The problem</h2>
+        <p>Tutoring often gets split across bookings, messages, homework, files, lesson notes and payments. I wanted the
+          product to feel coherent rather than like a collection of unrelated tools.</p>
+      </article>
+      <article class="detail-section">
+        <h2>My role</h2>
+        <p>I’m working across product thinking, UI/UX, frontend and full-stack development. I’m designing flows, testing
+          how they make sense from different user roles, and building the product itself.</p>
+      </article>
+      <article class="detail-section">
+        <h2>A UX example</h2>
+        <p>A rebooking flow initially forced parents back through tutor discovery. That technically worked, but made
+          little sense for someone who already had a tutor. I redesigned the flow around repeat behaviour instead.</p>
+      </article>
+      <article class="detail-section">
+        <h2>Demo</h2>
+        <p>The current portfolio version uses sample data so recruiters can explore the experience without interacting
+          with real users or personal information.</p>
+      </article>
     </section>
 
     <div class="detail-actions">
-      <a href="#" data-placeholder-link>Live demo ↗</a>
-<a href="#" data-placeholder-link>GitHub ↗</a>
+      <a href="https://studdy-git-feat-portfolio-demo-darsha-waterhouses-projects.vercel.app/demo"
+        data-placeholder-link>Live demo ↗</a>
+      <a href="https://github.com/darshabloom/Studdy" data-placeholder-link>GitHub ↗</a>
     </div>
   </main>
 
@@ -120,4 +154,5 @@
     accent = "green";
   </script>
 </body>
+
 </html>

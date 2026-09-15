@@ -197,7 +197,8 @@ a {
   gap: 10px;
 }
 
-.quick-links a {
+.quick-links a,
+.quick-links button {
   padding: 10px 12px;
   border: 1px solid rgba(20, 23, 20, .2);
   border-radius: 999px;
@@ -207,7 +208,8 @@ a {
   font-size: .85rem;
 }
 
-.quick-links a:hover {
+.quick-links a:hover,
+.quick-links button:hover {
   background: #fff;
 }
 
@@ -1030,4 +1032,88 @@ footer a {
   to {
     stroke: #af92b4;
   }
+}
+
+.cv-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.cv-modal.open {
+  display: flex;
+}
+
+.cv-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(20, 20, 20, 0.42);
+  backdrop-filter: blur(8px);
+}
+
+.cv-modal-panel {
+  position: relative;
+  z-index: 1;
+  width: min(1000px, 94vw);
+  height: min(88vh, 900px);
+  background: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.22);
+  display: flex;
+  flex-direction: column;
+}
+
+.cv-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(20, 23, 20, 0.12);
+}
+
+.cv-modal-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cv-download {
+  text-decoration: none;
+  border: 1px solid rgba(20, 23, 20, 0.2);
+  border-radius: 999px;
+  padding: 8px 12px;
+}
+
+.cv-close {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid rgba(20, 23, 20, 0.2);
+  background: white;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.cv-frame-wrap {
+  flex: 1;
+  min-height: 0;
+}
+
+.cv-frame {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.nav-cv,
+.quick-link-button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 }

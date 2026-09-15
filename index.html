@@ -29,11 +29,14 @@
 
       <path class="trail trail-orange" fill="none" d="M-100 300 C 230 470, 510 120, 820 300 S 1250 520, 1700 260" />
 
-      <path class="trail trail-green trail-thin" fill="none" d="M-100 540 C 300 390, 480 720, 860 500 S 1250 320, 1700 520" />
+      <path class="trail trail-green trail-thin" fill="none"
+        d="M-100 540 C 300 390, 480 720, 860 500 S 1250 320, 1700 520" />
 
-      <path class="trail trail-cyan trail-thin" fill="none" d="M-100 80 C 270 260, 520 -30, 850 130 S 1320 300, 1700 100" />
+      <path class="trail trail-cyan trail-thin" fill="none"
+        d="M-100 80 C 270 260, 520 -30, 850 130 S 1320 300, 1700 100" />
 
-      <path class="trail trail-yellow trail-thin" fill="none" d="M-80 920 C 320 720, 540 1020, 890 830 S 1300 690, 1700 900" />
+      <path class="trail trail-yellow trail-thin" fill="none"
+        d="M-80 920 C 320 720, 540 1020, 890 830 S 1300 690, 1700 900" />
 
     </svg>
   </div>
@@ -47,7 +50,7 @@
         <a href="#work">Work</a>
         <a href="#tools">Tools</a>
         <a href="#next">Next</a>
-        <a href="#" data-placeholder-link>CV</a>
+        <button class="cv-open nav-cv" type="button">CV</button>
       </nav>
     </header>
 
@@ -97,10 +100,13 @@
           </div>
 
           <div class="quick-links">
-            <a href="#" data-placeholder-link>CV ↓</a>
-            <a href="#" data-placeholder-link>GitHub ↗</a>
-            <a href="#" data-placeholder-link>LinkedIn ↗</a>
-            <a href="mailto:your@email.com">Email ↗</a>
+            <button class="cv-open quick-link-button" type="button">CV ↓</button>
+            <a href="https://github.com/darshabloom" target="_blank" rel="noopener">GitHub ↗</a>
+
+            <a href="https://www.linkedin.com/in/darsha-waterhouse-b93990320" target="_blank" rel="noopener">
+              LinkedIn ↗
+            </a>
+            <a href="mailto:darshawaterhouse360@gmail.com">Email ↗</a>
           </div>
         </div>
       </aside>
@@ -321,6 +327,30 @@
       </div>
     </footer>
   </main>
+
+  <div class="cv-modal" id="cvModal" aria-hidden="true">
+    <div class="cv-modal-backdrop"></div>
+
+    <div class="cv-modal-panel" role="dialog" aria-modal="true" aria-label="Darsha Waterhouse CV">
+      <div class="cv-modal-header">
+        <strong>Darsha Waterhouse — CV</strong>
+
+        <div class="cv-modal-actions">
+          <a href="Darsha-Waterhouse-CV.pdf" download class="cv-download">
+            Download ↓
+          </a>
+
+          <button class="cv-close" type="button" aria-label="Close CV">
+            ×
+          </button>
+        </div>
+      </div>
+
+      <div class="cv-frame-wrap">
+        <iframe src="Darsha-Waterhouse-CV.pdf" title="Darsha Waterhouse CV" class="cv-frame"></iframe>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
